@@ -21,5 +21,7 @@
 	@import './common/animate.css';
 	/* 图标库 */
 	@import './common/icon.css';
+	/* 公共css库 */
+	@import './common/common.css';
 	
 </style>

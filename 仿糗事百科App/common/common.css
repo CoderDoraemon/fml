@@ -1,0 +1,31 @@
+/* flex布局 */
+.u-f,
+.u-f-ac,
+.u-f-ajc {
+	display: flex;
+}
+
+/* 垂直方向居中对齐 */
+.u-f-ac,
+.u-f-ajc {
+	align-items: center;
+}
+
+/* 水平方向居中对齐 */
+.u-f-ajc {
+	justify-content: center;
+}
+
+/* 水平方向两端对齐，中间间距相等 */
+.u-f-jsb {
+	justify-content: space-between;
+}
+
+.u-f1 {
+	flex: 1;
+}
+
+/* 纵向布局 */
+.u-f-column {
+	flex-direction: column;
+}

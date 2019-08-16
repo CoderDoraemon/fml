@@ -4917,4 +4917,56 @@ to {
   content: "\EB97";
 }
 
+/* 公共css库 */
+
+/* flex布局 */
+.u-f,
+.u-f-ac,
+.u-f-ajc {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+/* 垂直方向居中对齐 */
+.u-f-ac,
+.u-f-ajc {
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+
+/* 水平方向居中对齐 */
+.u-f-ajc {
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+}
+
+/* 水平方向两端对齐，中间间距相等 */
+.u-f-jsb {
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+}
+.u-f1 {
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	    -ms-flex: 1;
+	        flex: 1;
+}
+
+/* 纵向布局 */
+.u-f-column {
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+}
+
 

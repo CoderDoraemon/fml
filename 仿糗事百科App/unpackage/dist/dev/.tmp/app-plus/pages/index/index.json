@@ -28,5 +28,7 @@
       }
     ]
   },
-  "usingComponents": {}
+  "usingComponents": {
+    "index-list": "/components/index-list/index-list"
+  }
 }

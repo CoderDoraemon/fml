@@ -1,1 +1,1 @@
-<view class="content"></view>
+<view><block wx:for="{{newslist}}" wx:for-item="items" wx:for-index="index" wx:key="index"><swiper><scroll-view class="list" scroll-y><block wx:for="{{items}}" wx:for-item="item" wx:for-index="index1" wx:key="index1"><block><index-list vue-id="{{'1-'+index+'-'+index1}}" item="{{item}}" bind:__l="__l"></index-list></block></block></scroll-view></swiper></block></view>

@@ -1,0 +1,80 @@
+
+.index-list {
+	padding: 20rpx;
+}
+.index-item0 .avatar-name {
+	height: 85rpx;
+}
+.index-item0 .avatar-name .avatar-vip {
+	position: relative;
+	height: 100%;
+}
+.index-item0 .avatar-name .avatar-vip .avatar  {
+	width: 85rpx;
+	height: 85rpx;
+	border-radius: 85rpx;
+}
+.index-item0 .avatar-name .avatar-vip .vip {
+	width: 25rpx;
+	height: 25rpx;
+	border-radius: 25rpx;
+	position: absolute;
+	bottom: 0rpx;
+	right: 0rpx;
+}
+.index-item0 .avatar-name .name-job {
+	margin-left: 25rpx;
+	height: 100%;
+}
+.index-item0 .avatar-name .name-job .name-tip {
+	height: 30rpx;
+}
+.index-item0 .avatar-name .name-job .name-tip text {
+	/* height: 30upx;
+	line-height: 30upx; */
+	color: #989898;
+	font-size: 32rpx;
+}
+.index-item0 .avatar-name .name-job .name-tip image {
+	width: 25rpx;
+	height: 25rpx;
+	margin-left: 8rpx;
+}
+.index-item0 .avatar-name .name-job text {
+	line-height: 25rpx;
+	color: #D5D5D5;
+	font-size: 24rpx;
+}
+.index-item0 .attention-del .attention {
+	padding: 5rpx 15rpx;
+	font-size: 30rpx;
+	background-color: #F4F4F4;
+	border-radius: 5rpx;
+}
+.index-item0 .attention-del .del {
+	padding-left: 30rpx;
+}
+.index-item1 {
+	color: #4A4A4A;
+	padding: 15rpx 0;
+}
+.index-item2 image {
+	width: 100%;
+}
+.index-item3 .like {
+	color: #C9C9C9;
+}
+.index-item3 .comment {
+	color: #C9C9C9;
+}
+.index-item3 .like .ding {
+	padding-right: 15rpx;
+}
+.index-item3 .comment .message {
+	padding-right: 15rpx;
+}
+.icon-margin {
+	margin-right: 10rpx;
+}
+
+
