@@ -29,6 +29,7 @@
     ]
   },
   "usingComponents": {
-    "index-list": "/components/index-list/index-list"
+    "index-list": "/components/index/index-list",
+    "swiper-tab-head": "/components/index/swiper-tab-head"
   }
 }

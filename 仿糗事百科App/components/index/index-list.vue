@@ -30,6 +30,10 @@
 		<!-- 图片内容 -->
 		<view class="index-item2">
 			<image :src="item.titlepic" mode="widthFix"></image>
+			<view class="icon iconfont icon-bofang index-list-playIcon"></view>
+			<view class="index-list-playInfo">
+				观看次数
+			</view>
 		</view>
 		<!-- 底部赞踩评论分享 -->
 		<view class="index-item3 u-f-ac u-f-jsb">
@@ -137,6 +141,19 @@
 	.index-item1 {
 		color: #4A4A4A;
 		padding: 15upx 0;
+	}
+	
+	.index-item2 {
+		position: relative;
+	}
+	
+	.index-item2 .index-list-playIcon {
+	}
+	
+	.index-item2 .index-list-playInfo {
+		position: absolute;
+		bottom: 8upx;
+		right: 8upx;
 	}
 	
 	.index-item2 image {
