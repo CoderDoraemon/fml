@@ -4,8 +4,7 @@
 			<block v-for="(tab,index) in tabBars" :key="tab.id">
 				<view class="swiper-tab-list" 
 				:class="{'active':tabIndex==index}" 
-				:style="{width: itemWidth+'px'}" 
-				@click="tabtap(index)">
+				@tap="tabtap(index)">
 					{{tab.name}}
 					<view class="swiper-tab-line"></view>
 				</view>
@@ -19,11 +18,11 @@
 		props: {
 			tabBars: Array,
 			tabIndex: Number,
-			itemWidth: 150,
+			itemWidth: Number,
 		},
 		methods: {
 			tabtap(index) {
-				this.$emit('tabtap', index);
+				this.$emit('tabtap',index);
 			},
 		}
 	}

@@ -5,6 +5,7 @@
 			"style": {
 				"navigationBarTitleText": "糗事",
 				"app-plus": {
+					"scrollIndicator": "none",
 					"titleNView": {
 						/* 搜索框 */
 						"searchInput": {

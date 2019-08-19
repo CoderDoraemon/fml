@@ -1,5 +1,6 @@
 {
   "navigationBarTitleText": "糗事",
+  "scrollIndicator": "none",
   "titleNView": {
     "searchInput": {
       "align": "center",

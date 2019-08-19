@@ -1,0 +1,9 @@
+
+.load-more {
+	color: #007AFF;
+	height: 40rpx;
+	line-height: 40rpx;
+	text-align: center;
+}
+
+
