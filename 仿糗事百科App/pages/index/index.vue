@@ -1,8 +1,11 @@
 <template>
 	<view>
-		<swiper-tab-head :tabBars="tabBars" 
+		<swiper-tab-head 
+		:tabBars="tabBars" 
 		:tabIndex="tabIndex" 
-		:tabTap="tabTap"></swiper-tab-head>
+		:tabtap="tabtap"
+		:itemWidth="itemWidth">
+		</swiper-tab-head>
 		
 		<view class="uni-tab-bar">
 			<swiper class="swiper-box" 
@@ -16,11 +19,9 @@
 						</block>
 					</scroll-view>
 				</swiper-item>
-				
 			</swiper>
 		</view>
 		
-
 	</view>
 </template>
 
@@ -36,6 +37,7 @@
 			return {
 				swiperheight: 500,
 				tabIndex: 0,
+				itemWidth: 150,
 				tabBars: [{
 						name: "关注",
 						id: "guanzhu"
@@ -47,19 +49,7 @@
 					{
 						name: "体育",
 						id: "tiyu"
-					},
-					{
-						name: "热点",
-						id: "redian"
-					},
-					{
-						name: "财经",
-						id: "caijing"
-					},
-					{
-						name: "娱乐",
-						id: "yule"
-					},
+					}
 				],
 				newslist: [{
 						list: [{
@@ -229,15 +219,6 @@
 								sharenum: 10,
 							}
 						]
-					},
-					{
-						list: []
-					},
-					{
-						list: []
-					},
-					{
-						list: []
 					}
 				]
 			}
@@ -247,12 +228,13 @@
 				success: (res) => {
 					let height = res.windowHeight - uni.upx2px(100)
 					this.swiperheight = height;
+					// this.itemWidth = res.windowWidth / this.tabBars.length
 				}
 			})
 		},
 		methods: {
 			/* tab item 点击 */
-			tabTap(index) {
+			tabtap(index) {
 				this.tabIndex = index;
 			},
 			tabChange(e) {
