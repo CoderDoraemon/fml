@@ -106,7 +106,7 @@
 /******/ 		if(installedCssChunks[chunkId]) promises.push(installedCssChunks[chunkId]);
 /******/ 		else if(installedCssChunks[chunkId] !== 0 && cssChunks[chunkId]) {
 /******/ 			promises.push(installedCssChunks[chunkId] = new Promise(function(resolve, reject) {
-/******/ 				var href = "" + ({"components/index/index-list":"components/index/index-list","components/index/swiper-tab-head":"components/index/swiper-tab-head"}[chunkId]||chunkId) + ".wxss";
+/******/ 				var href = "" + ({"components/common/load-more":"components/common/load-more","components/index/index-list":"components/index/index-list","components/index/swiper-tab-head":"components/index/swiper-tab-head"}[chunkId]||chunkId) + ".wxss";
 /******/ 				var fullhref = __webpack_require__.p + href;
 /******/ 				var existingLinkTags = document.getElementsByTagName("link");
 /******/ 				for(var i = 0; i < existingLinkTags.length; i++) {

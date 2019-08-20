@@ -18,9 +18,9 @@
 						<block v-for="(item, row) in items.list" :key="row">
 							<index-list :item="item"></index-list>
 						</block>
-						<view class="load-more">
-							{{ items.loadtext }}
-						</view>
+						
+						<load-more :loadtext="items.loadtext"></load-more>
+						
 					</scroll-view>
 				</swiper-item>
 			</swiper>
@@ -32,10 +32,12 @@
 <script>
 	import indexList from '../../components/index/index-list.vue'
 	import swiperTabHead from '../../components/index/swiper-tab-head.vue'
+	import loadMore from '../../components/common/load-more.vue';
 	export default {
 		components: {
 			indexList,
-			swiperTabHead
+			swiperTabHead,
+			loadMore
 		},
 		data() {
 			return {
@@ -286,12 +288,5 @@
 </script>
 
 <style>
-
-.load-more {
-	color: #007AFF;
-	height: 40upx;
-	line-height: 40upx;
-	text-align: center;
-}
 
 </style>
