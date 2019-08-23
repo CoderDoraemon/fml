@@ -1,2 +1,1 @@
-setCssToHead([".",[1],"load-more { color: #007AFF; height: ",[0,40],"; line-height: ",[0,40],"; text-align: center; }\n",],undefined,{path:"./pages/index/index.wxss"})();
 document.dispatchEvent(new CustomEvent("generateFuncReady", { detail: { generateFunc: $gwx('./pages/index/index.wxml') } }));

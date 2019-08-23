@@ -1,0 +1,24 @@
+{
+  "navigationBarTitleText": "",
+  "scrollIndicator": "none",
+  "titleNView": {
+    "autoBackButton": false,
+    "searchInput": {
+      "align": "center",
+      "backgroundColor": "#F7F7F7",
+      "borderRadius": "5px",
+      "placeholder": "搜索糗事",
+      "placeholderColor": "#CCCCCC"
+    },
+    "buttons": [
+      {
+        "color": "#000000",
+        "colorPressed": "#BBBBBB",
+        "float": "right",
+        "fontSize": "16px",
+        "text": "取消"
+      }
+    ]
+  },
+  "usingComponents": {}
+}

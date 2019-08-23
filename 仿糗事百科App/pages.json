@@ -57,7 +57,45 @@
 				"navigationBarTitleText": "我的"
 			}
 		}
-	],
+	    ,{
+            "path" : "pages/search/search",
+            "style" : {
+				"navigationBarTitleText": "",
+				"app-plus": {
+					"scrollIndicator": "none",
+					"titleNView": {
+						"autoBackButton": false,
+						/* 搜索框 */
+						"searchInput": {
+							"align":"center",
+							"backgroundColor":"#F7F7F7",
+							"borderRadius":"5px",
+							"placeholder":"搜索糗事",
+							"placeholderColor":"#CCCCCC"
+						},
+						/* 按钮 */
+						"buttons": [
+							{
+								"color":"#000000",
+								"colorPressed":"#BBBBBB",
+								"float":"right",
+								"fontSize":"16px",
+								"text":"取消"
+							}
+						]
+					}
+				}
+			}
+        }
+        ,{
+            "path" : "pages/publish/publish",
+            "style" : {
+				"app-plus": {
+					"titleNView": false
+				}
+			}
+        }
+    ],
 	"tabBar": {
 		"color": "#B5B5B5",
 		"selectedColor": "#FEE42B",

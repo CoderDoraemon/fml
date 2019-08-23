@@ -102,11 +102,11 @@
 /******/
 /******/
 /******/ 		// mini-css-extract-plugin CSS loading
-/******/ 		var cssChunks = {"components/index/index-list":1,"components/index/swiper-tab-head":1};
+/******/ 		var cssChunks = {"components/index/index-list":1,"components/index/swiper-tab-head":1,"components/uni-nav-bar/uni-nav-bar":1,"components/uni-icon/uni-icon":1,"components/uni-status-bar/uni-status-bar":1};
 /******/ 		if(installedCssChunks[chunkId]) promises.push(installedCssChunks[chunkId]);
 /******/ 		else if(installedCssChunks[chunkId] !== 0 && cssChunks[chunkId]) {
 /******/ 			promises.push(installedCssChunks[chunkId] = new Promise(function(resolve, reject) {
-/******/ 				var href = "" + ({"components/common/load-more":"components/common/load-more","components/index/index-list":"components/index/index-list","components/index/swiper-tab-head":"components/index/swiper-tab-head"}[chunkId]||chunkId) + ".wxss";
+/******/ 				var href = "" + ({"components/common/load-more":"components/common/load-more","components/index/index-list":"components/index/index-list","components/index/swiper-tab-head":"components/index/swiper-tab-head","components/uni-nav-bar/uni-nav-bar":"components/uni-nav-bar/uni-nav-bar","components/uni-icon/uni-icon":"components/uni-icon/uni-icon","components/uni-status-bar/uni-status-bar":"components/uni-status-bar/uni-status-bar"}[chunkId]||chunkId) + ".wxss";
 /******/ 				var fullhref = __webpack_require__.p + href;
 /******/ 				var existingLinkTags = document.getElementsByTagName("link");
 /******/ 				for(var i = 0; i < existingLinkTags.length; i++) {

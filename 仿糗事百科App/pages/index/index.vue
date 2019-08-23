@@ -241,6 +241,25 @@
 				}
 			})
 		},
+		/* 导航栏按钮点击 */
+		onNavigationBarButtonTap(e) {
+			switch (e.index){
+				case 1:
+				uni.navigateTo({
+					url: '../publish/publish'
+				})
+					break;
+				default:
+					break;
+			}
+		},
+		/* 搜索框点击 */
+		onNavigationBarSearchInputClicked(e) {
+			console.log(JSON.stringify(e))
+			uni.navigateTo({
+				url: '../search/search'
+			})
+		},
 		methods: {
 			/* tab item 点击 */
 			tabtap(index) {
