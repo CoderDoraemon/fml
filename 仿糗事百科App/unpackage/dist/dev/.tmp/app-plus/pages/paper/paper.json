@@ -1,4 +1,27 @@
 {
-  "navigationBarTitleText": "动态",
-  "usingComponents": {}
+  "navigationBarTitleText": "小纸条",
+  "scrollIndicator": "none",
+  "titleNView": {
+    "buttons": [
+      {
+        "color": "#000000",
+        "colorPressed": "#BBBBBB",
+        "float": "left",
+        "fontSize": "22px",
+        "fontSrc": "/static/font/icon.ttf",
+        "text": ""
+      },
+      {
+        "color": "#000000",
+        "colorPressed": "#BBBBBB",
+        "float": "right",
+        "fontSize": "22px",
+        "fontSrc": "/static/font/icon.ttf",
+        "text": ""
+      }
+    ]
+  },
+  "usingComponents": {
+    "uni-badge": "/components/uni-badge/uni-badge"
+  }
 }

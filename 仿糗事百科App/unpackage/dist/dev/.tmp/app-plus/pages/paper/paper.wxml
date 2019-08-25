@@ -1,1 +1,1 @@
-<view></view>
+<view><view class="paper-list u-f-ac"><image class="u-f-sh" src="../../static/tabbar/home.png" mode="widthFix"></image><view class="u-f-column u-f1"><view class="u-f-ac u-f-jsb"><view class="u-line-one">昵称昵称昵称昵称昵称昵称昵昵称昵称昵昵称昵称昵昵称昵称昵</view><view>13：58</view></view><view class="u-f-ac u-f-jsb">详情<uni-badge vue-id="1" text="{{1}}" type="error" bind:__l="__l" vue-slots="{{['default']}}">1</uni-badge></view></view></view></view>

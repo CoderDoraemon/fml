@@ -38,6 +38,11 @@
 				        console.log(res.errMsg);
 				    }
 				});
+			},
+			back() {
+				uni.navigateBack({
+					delta: 1
+				})
 			}
 		}
 	}

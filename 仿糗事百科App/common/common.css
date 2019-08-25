@@ -29,3 +29,22 @@
 .u-f-column {
 	flex-direction: column;
 }
+
+.u-line-one {
+	/* 超出部分隐藏 */
+	overflow: hidden;
+	/* 不换行 */
+	white-space: nowrap;
+	/* 超出部分文字以...显示 */
+	text-overflow: ellipsis;
+}
+
+.u-f-sh {
+	flex-shrink: 0;
+}
+
+.u-o-x {
+	overflow-x: hidden;
+}
+
+

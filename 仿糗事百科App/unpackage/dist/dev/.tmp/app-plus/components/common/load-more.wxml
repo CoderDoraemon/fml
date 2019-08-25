@@ -1,1 +1,1 @@
-<view class="_div"></view>
+<view class="load-more">{{''+loadtext+''}}</view>

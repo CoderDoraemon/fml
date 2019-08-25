@@ -1,11 +1,12 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/paper/paper",
     "pages/news/news",
+    "pages/paper/paper",
     "pages/home/home",
     "pages/search/search",
-    "pages/publish/publish"
+    "pages/publish/publish",
+    "pages/user-chat/user-chat"
   ],
   "window": {
     "navigationBarTextStyle": "black",
@@ -52,6 +53,6 @@
     "autoclose": false
   },
   "appname": "仿糗事百科",
-  "compilerVersion": "2.2.1",
+  "compilerVersion": "2.2.2",
   "usingComponents": {}
 }

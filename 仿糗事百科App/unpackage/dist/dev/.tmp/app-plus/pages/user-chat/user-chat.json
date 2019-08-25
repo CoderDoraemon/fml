@@ -1,0 +1,17 @@
+{
+  "navigationBarTitleText": "标题",
+  "scrollIndicator": "none",
+  "titleNView": {
+    "buttons": [
+      {
+        "color": "#000000",
+        "colorPressed": "#BBBBBB",
+        "float": "right",
+        "fontSize": "22px",
+        "fontSrc": "/static/font/icon.ttf",
+        "text": ""
+      }
+    ]
+  },
+  "usingComponents": {}
+}

@@ -4968,5 +4968,22 @@ to {
 	    -ms-flex-direction: column;
 	        flex-direction: column;
 }
+.u-line-one {
+	/* 超出部分隐藏 */
+	overflow: hidden;
+	/* 不换行 */
+	white-space: nowrap;
+	/* 超出部分文字以...显示 */
+	-o-text-overflow: ellipsis;
+	   text-overflow: ellipsis;
+}
+.u-f-sh {
+	-webkit-flex-shrink: 0;
+	    -ms-flex-negative: 0;
+	        flex-shrink: 0;
+}
+.u-o-x {
+	overflow-x: hidden;
+}
 
 
