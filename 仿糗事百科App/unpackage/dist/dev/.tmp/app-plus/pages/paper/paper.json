@@ -22,6 +22,6 @@
     ]
   },
   "usingComponents": {
-    "uni-badge": "/components/uni-badge/uni-badge"
+    "paper-list": "/components/paper/paper-list"
   }
 }

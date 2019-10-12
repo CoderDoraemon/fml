@@ -1,2 +1,1 @@
-setCssToHead([".",[1],"paper-list { border-bottom: ",[0,1]," solid #e5e5e5; padding: ",[0,30]," ",[0,30],"; background: #3F536E; }\n.",[1],"paper-list\x3ewx-image { width: ",[0,100],"; height: ",[0,100],"; margin-right: ",[0,30],"; }\n.",[1],"paper-list\x3ewx-view { }\n.",[1],"paper-list\x3ewx-view\x3ewx-view\x3ewx-view:last-child { background: #007AFF; width: ",[0,120],"; text-align: right; }\n",],undefined,{path:"./pages/paper/paper.wxss"})();
 document.dispatchEvent(new CustomEvent("generateFuncReady", { detail: { generateFunc: $gwx('./pages/paper/paper.wxml') } }));
