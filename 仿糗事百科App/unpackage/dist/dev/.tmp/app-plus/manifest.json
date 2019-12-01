@@ -11,7 +11,7 @@
     "code": 10
   },
   "description": "",
-  "launch_path": "__uniapptabbar.html",
+  "launch_path": "__uniappview.html",
   "developer": {
     "name": "",
     "email": "",
@@ -24,7 +24,7 @@
   },
   "plus": {
     "useragent": {
-      "value": "uni-app appservice",
+      "value": "uni-app",
       "concatenate": true
     },
     "splashscreen": {
@@ -34,7 +34,11 @@
       "delay": 0
     },
     "popGesture": "close",
-    "launchwebview": {},
+    "launchwebview": {
+      "id": "1",
+      "kernel": "WKWebview",
+      "uni-app": "auto"
+    },
     "statusbar": {
       "immersed": "supportedDevice",
       "style": "dark",
@@ -85,18 +89,50 @@
       }
     },
     "uni-app": {
-      "compilerVersion": "2.3.3",
+      "compilerVersion": "2.4.2",
       "control": "v8",
-      "nvueCompiler": "weex",
-      "renderer": "auto"
+      "nvueCompiler": "uni-app",
+      "renderer": "auto",
+      "nvue": {
+        "flex-direction": "column"
+      }
     },
-    "secondwebview": {
-      "id": "1",
-      "launch_path": "__uniappview.html",
-      "kernel": "WKWebview",
-      "mode": "child",
-      "top": 0,
-      "bottom": 56
+    "tabBar": {
+      "color": "#B5B5B5",
+      "selectedColor": "#FEE42B",
+      "borderStyle": "rgba(0,0,0,0.4)",
+      "backgroundColor": "#ffffff",
+      "list": [
+        {
+          "pagePath": "pages/index/index",
+          "iconPath": "static/tabbar/index.png",
+          "selectedIconPath": "static/tabbar/indexed.png",
+          "text": "糗事"
+        },
+        {
+          "pagePath": "pages/news/news",
+          "iconPath": "static/tabbar/news.png",
+          "selectedIconPath": "static/tabbar/newsed.png",
+          "text": "动态"
+        },
+        {
+          "pagePath": "pages/paper/paper",
+          "iconPath": "static/tabbar/paper.png",
+          "selectedIconPath": "static/tabbar/papered.png",
+          "text": "小纸条"
+        },
+        {
+          "pagePath": "pages/home/home",
+          "iconPath": "static/tabbar/home.png",
+          "selectedIconPath": "static/tabbar/homeed.png",
+          "text": "我的"
+        }
+      ],
+      "height": "50px",
+      "child": [
+        "lauchwebview"
+      ],
+      "selected": 0
     }
   }
 }

@@ -1,6 +1,6 @@
 <template>
   <text v-if="text" :class="inverted ? 'uni-badge-' + type + ' uni-badge--' + size + ' uni-badge-inverted' : 'uni-badge-' + type + ' uni-badge--' + size"
-    class="uni-badge" @click="onClick()">{{ text }}</text>
+    class="uni-badghe" @click="onClick()">{{ text }}</text>
 </template>
 
 <script>

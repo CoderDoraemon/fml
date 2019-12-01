@@ -46,13 +46,13 @@
       }
     ]
   },
-  "nvueCompiler": "weex",
+  "nvueCompiler": "uni-app",
   "renderer": "auto",
   "splashscreen": {
     "alwaysShowBeforeRender": true,
     "autoclose": false
   },
   "appname": "仿糗事百科",
-  "compilerVersion": "2.3.3",
+  "compilerVersion": "2.4.2",
   "usingComponents": {}
 }

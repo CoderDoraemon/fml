@@ -1,25 +1,49 @@
 {
   "pages": [
-    "pages/index/index"
+    "pages/index/index",
+    "pages/news/news",
+    "pages/paper/paper",
+    "pages/home/home",
+    "pages/search/search",
+    "pages/publish/publish",
+    "pages/user-chat/user-chat"
   ],
   "subPackages": [],
   "window": {
     "navigationBarTextStyle": "black",
-    "navigationBarTitleText": "uni-app",
-    "navigationBarBackgroundColor": "#F8F8F8",
-    "backgroundColor": "#F8F8F8"
+    "navigationBarTitleText": "糗事百科",
+    "navigationBarBackgroundColor": "#FFFFFF",
+    "backgroundColor": "#FFFFFF"
   },
   "tabBar": {
-    "color": "#7A7E83",
-    "selectedColor": "#3cc51f",
+    "color": "#B5B5B5",
+    "selectedColor": "#FEE42B",
     "borderStyle": "black",
     "backgroundColor": "#ffffff",
     "list": [
       {
         "pagePath": "pages/index/index",
+        "iconPath": "static/tabbar/index.png",
+        "selectedIconPath": "static/tabbar/indexed.png",
+        "text": "糗事"
+      },
+      {
+        "pagePath": "pages/news/news",
+        "iconPath": "static/tabbar/news.png",
+        "selectedIconPath": "static/tabbar/newsed.png",
+        "text": "动态"
+      },
+      {
+        "pagePath": "pages/paper/paper",
+        "iconPath": "static/tabbar/paper.png",
+        "selectedIconPath": "static/tabbar/papered.png",
+        "text": "小纸条"
+      },
+      {
+        "pagePath": "pages/home/home",
         "iconPath": "static/tabbar/home.png",
         "selectedIconPath": "static/tabbar/homeed.png",
-        "text": "组件"
+        "text": "我的"
       }
     ]
   },

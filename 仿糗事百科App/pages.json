@@ -86,7 +86,10 @@
             "path" : "pages/search/search",
             "style" : {
 				"navigationBarTitleText": "",
+				"enablePullDownRefresh": true,
 				"app-plus": {
+					"animationType": "slide-in-bottom",
+					"animationDuration": 200,
 					"scrollIndicator": "none",
 					"titleNView": {
 						"autoBackButton": false,

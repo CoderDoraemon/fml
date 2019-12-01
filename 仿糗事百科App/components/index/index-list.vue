@@ -1,5 +1,5 @@
 <template>
-	<view class="index-list u-f-column">
+	<view class="index-list u-f-column animated fadeIn fast">
 		<!-- 头部 -->
 		<view class="index-item0 u-f u-f-jsb u-f-ac">
 			<!-- 头像 -->
