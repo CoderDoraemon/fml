@@ -1,6 +1,6 @@
 <template>
 	<view class="paper-list u-f-ac">
-		<image class="u-f-sh" src="item.userpic" mode="widthFix"></image>
+		<image class="u-f-sh" :src="item.userpic" mode="widthFix"></image>
 		<view class="u-f-column u-f1">
 			<view class="u-f-ac u-f-jsb u-line-one">
 				{{ item.username }}
@@ -9,7 +9,7 @@
 			<view class="u-f-ac u-f-jsb">
 				{{ item.data }}
 				<template v-if="item.noreadnum > 0">
-					<uni-badge :text="1" type="error">1</uni-badge>
+					<uni-badge :text="item.noreadnum" type="error"></uni-badge>
 				</template>
 				
 			</view>
@@ -40,6 +40,7 @@
 	.paper-list>image {
 		width: 100upx;
 		height: 100upx;
+		border-radius: 100upx;
 		margin-right: 30upx;
 	}
 

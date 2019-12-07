@@ -1,96 +1,117 @@
 <template>
-	<view>
+	<view class="home-page">
+		
 		<!-- 未登录 -->
-		<view class="u-f-ajc">登陆仿糗事百科，体验更多功能</view>
-		<!-- 第三方登陆 -->
-		<view class="other-login u-f-ac">
-			<view class="u-f-ajc u-f1">
-				<view class="icon iconfont icon-weixin u-f-ajc"></view>
-			</view>
-			<view class="u-f-ajc u-f1">
-				<view class="icon iconfont icon-xinlangweibo u-f-ajc"></view>
-			</view>
-			<view class="u-f-ajc u-f1">
-				<view class="icon iconfont icon-QQ u-f-ajc"></view>
-			</view>
-		</view>
-		<!-- 账号密码登陆 -->
-		<view class="u-f-ajc">
-			账号密码登陆<view class="icon iconfont icon-jinru"></view>
-		</view>
+		<template v-if="isLogin">
+			<homeLogin :userInfo="userInfo"></homeLogin>
+		</template>
+		
+		<template v-else>
+			<home-other-login></home-other-login> 
+		</template>
+		
 		<!-- 横向bar -->
-		<view class="home-tabs u-f-ajc">
-			<view class="u-f-column u-f1 u-f-ajc">
-				0<view class="">糗事</view>
-			</view>
-			<view class="u-f-column u-f1 u-f-ajc">
-				0<view class="">动态</view>
-			</view>
-			<view class="u-f-column u-f1 u-f-ajc">
-				0<view class="">评论</view>
-			</view>
-			<view class="u-f-column u-f1 u-f-ajc">
-				0<view class="">收藏</view>
-			</view>
-		</view>
+		<homeTabs :numbers="numbers"></homeTabs>
+		
 		<!-- 广告位 -->
 		<view class="home-ad u-f-ajc">
 			<image src="../../static/demo/banner3.jpg" mode="widthFix" lazy-load></image>
 		</view>
+		
+		<!-- 列表 -->
+		<block v-for="(item, index) in list" :key="index">
+			<home-list-item :item="item"></home-list-item>
+		</block>
+		
+		
 	</view>
 </template>
 
 <script>
+	
+	import homeListItem from '../../components/home/home-list-item.vue';
+	import homeOtherLogin from '../../components/home/home-other-login.vue';
+	import homeLogin from '../../components/home/home-login.vue';
+	import homeTabs from '../../components/home/home-tabs.vue';
+	
 	export default {
+		components: {
+			homeOtherLogin,
+			homeListItem,
+			homeLogin,
+			homeTabs,
+		},
 		data() {
 			return {
-				
+				isLogin: true,
+				userInfo: {
+					avatar: "../../static/demo/userpic/1.jpg",
+					name: "昵称",
+					total_number: 100,
+					today_number: 1
+				},
+				numbers: [
+					{
+						title: "帖子",
+						number: 37
+					},
+					{
+						title: "动态",
+						number: 46
+					},
+					{
+						title: "评论",
+						number: 12
+					},
+					{
+						title: "粉丝",
+						number: 10
+					}
+				],
+				list: [
+					{
+						title: "浏览历史",
+						icon: "liulan"
+					},
+					{
+						title: "社区认证",
+						icon: "huiyuanvip"
+					},
+					{
+						title: "审核帖子",
+						icon: "keyboard"
+					}
+				]
 			}
 		},
 		methods: {
 			
+		},
+		onNavigationBarButtonTap: (res) => {
+			console.log(res.index)
+			switch (res.index){
+				case 0:
+				uni.navigateTo({
+					url: '../setter/setter'
+				})
+					break;
+				default:
+					break;
+			}
 		}
 	}
 </script>
 
 <style>
-
-.other-login {
-	padding: 40upx 80upx;
-}
-
-.other-login>view>view {
-	width: 100upx;
-	height: 100upx;
-	border-radius: 100%;
-	font-size: 55upx;
-	color: #FFFFFF;
-}
-
-.other-login .icon-weixin {
-	background: #08D0AA;
-}
-
-.other-login .icon-xinlangweibo {
-	background: #5499FF;
-}
-
-.other-login .icon-QQ {
-	background: #FB9000;
-}
-
-.home-tabs {
-	padding: 20upx;
-}
-
-.home-ad {
-	padding: 20upx;
 	
-}
-.home-ad>image {
-	width: 100%;
-	height: 150upx;
-	border-radius: 20upx;
-}
+	.home-ad {
+		padding: 20upx;
+	}
 
+	.home-ad>image {
+		width: 100%;
+		height: 150upx;
+		border-radius: 20upx;
+	}
+	
 </style>

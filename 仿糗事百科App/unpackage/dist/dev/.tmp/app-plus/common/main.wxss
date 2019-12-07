@@ -4924,7 +4924,8 @@ to {
 /* flex布局 */
 .u-f,
 .u-f-ac,
-.u-f-ajc {
+.u-f-ajc,
+.u-f-column {
 	display: -webkit-box;
 	display: -webkit-flex;
 	display: -ms-flexbox;

@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "个人空间",
+  "usingComponents": {
+    "home-tabs": "/components/home/home-tabs",
+    "swiper-tab-head": "/components/index/swiper-tab-head"
+  }
+}

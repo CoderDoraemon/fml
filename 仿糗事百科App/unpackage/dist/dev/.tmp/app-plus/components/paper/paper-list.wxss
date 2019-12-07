@@ -1,16 +1,17 @@
 
-.paper-list.data-v-f9d46bd2 {
+.paper-list.data-v-d7374ca0 {
 	border-bottom: 1rpx solid #e5e5e5;
 	padding: 30rpx 30rpx;
 	width: calc(100% - 60rpx);
 }
-.paper-list>image.data-v-f9d46bd2 {
+.paper-list>image.data-v-d7374ca0 {
 	width: 100rpx;
 	height: 100rpx;
+	border-radius: 100rpx;
 	margin-right: 30rpx;
 }
-.paper-list>view.data-v-f9d46bd2 {}
-.paper-list>view>view>view.data-v-f9d46bd2:last-child {
+.paper-list>view.data-v-d7374ca0 {}
+.paper-list>view>view>view.data-v-d7374ca0:last-child {
 	width: 120rpx;
 	text-align: right;
 }

@@ -1,20 +1,20 @@
 
-.index-list.data-v-023f94ea {
+.index-list.data-v-102ec524 {
 	padding: 20rpx;
 }
-.index-item0 .avatar-name.data-v-023f94ea {
+.index-item0 .avatar-name.data-v-102ec524 {
 	height: 85rpx;
 }
-.index-item0 .avatar-name .avatar-vip.data-v-023f94ea {
+.index-item0 .avatar-name .avatar-vip.data-v-102ec524 {
 	position: relative;
 	height: 100%;
 }
-.index-item0 .avatar-name .avatar-vip .avatar.data-v-023f94ea  {
+.index-item0 .avatar-name .avatar-vip .avatar.data-v-102ec524  {
 	width: 85rpx;
 	height: 85rpx;
 	border-radius: 85rpx;
 }
-.index-item0 .avatar-name .avatar-vip .vip.data-v-023f94ea {
+.index-item0 .avatar-name .avatar-vip .vip.data-v-102ec524 {
 	width: 25rpx;
 	height: 25rpx;
 	border-radius: 25rpx;
@@ -22,68 +22,68 @@
 	bottom: 0rpx;
 	right: 0rpx;
 }
-.index-item0 .avatar-name .name-job.data-v-023f94ea {
+.index-item0 .avatar-name .name-job.data-v-102ec524 {
 	margin-left: 25rpx;
 	height: 100%;
 }
-.index-item0 .avatar-name .name-job .name-tip.data-v-023f94ea {
+.index-item0 .avatar-name .name-job .name-tip.data-v-102ec524 {
 	height: 30rpx;
 }
-.index-item0 .avatar-name .name-job .name-tip text.data-v-023f94ea {
+.index-item0 .avatar-name .name-job .name-tip text.data-v-102ec524 {
 	/* height: 30upx;
 	line-height: 30upx; */
 	color: #989898;
 	font-size: 32rpx;
 }
-.index-item0 .avatar-name .name-job .name-tip image.data-v-023f94ea {
+.index-item0 .avatar-name .name-job .name-tip image.data-v-102ec524 {
 	width: 25rpx;
 	height: 25rpx;
 	margin-left: 8rpx;
 }
-.index-item0 .avatar-name .name-job text.data-v-023f94ea {
+.index-item0 .avatar-name .name-job text.data-v-102ec524 {
 	line-height: 25rpx;
 	color: #D5D5D5;
 	font-size: 24rpx;
 }
-.index-item0 .attention-del .attention.data-v-023f94ea {
+.index-item0 .attention-del .attention.data-v-102ec524 {
 	padding: 5rpx 15rpx;
 	font-size: 30rpx;
 	background-color: #F4F4F4;
 	border-radius: 5rpx;
 }
-.index-item0 .attention-del .del.data-v-023f94ea {
+.index-item0 .attention-del .del.data-v-102ec524 {
 	padding-left: 30rpx;
 }
-.index-item1.data-v-023f94ea {
+.index-item1.data-v-102ec524 {
 	color: #4A4A4A;
 	padding: 15rpx 0;
 }
-.index-item2.data-v-023f94ea {
+.index-item2.data-v-102ec524 {
 	position: relative;
 }
-.index-item2 .index-list-playIcon.data-v-023f94ea {
+.index-item2 .index-list-playIcon.data-v-102ec524 {
 }
-.index-item2 .index-list-playInfo.data-v-023f94ea {
+.index-item2 .index-list-playInfo.data-v-102ec524 {
 	position: absolute;
 	bottom: 8rpx;
 	right: 8rpx;
 }
-.index-item2 image.data-v-023f94ea {
+.index-item2 image.data-v-102ec524 {
 	width: 100%;
 }
-.index-item3 .like.data-v-023f94ea {
+.index-item3 .like.data-v-102ec524 {
 	color: #C9C9C9;
 }
-.index-item3 .comment.data-v-023f94ea {
+.index-item3 .comment.data-v-102ec524 {
 	color: #C9C9C9;
 }
-.index-item3 .like .ding.data-v-023f94ea {
+.index-item3 .like .ding.data-v-102ec524 {
 	padding-right: 15rpx;
 }
-.index-item3 .comment .message.data-v-023f94ea {
+.index-item3 .comment .message.data-v-102ec524 {
 	padding-right: 15rpx;
 }
-.icon-margin.data-v-023f94ea {
+.icon-margin.data-v-102ec524 {
 	margin-right: 10rpx;
 }
 

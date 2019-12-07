@@ -19,56 +19,56 @@
 			return {
 				list:[
 						{
-							userpic:"../../static/demo/userpic/12.jpg",
+							userpic:"../../static/demo/userpic/1.jpg",
 							username:"昵称",
 							time:"10:21",
 							data:"我是信息",
 							noreadnum:2
 						},
 						{
-							userpic:"../../static/demo/userpic/12.jpg",
+							userpic:"../../static/demo/userpic/2.jpg",
 							username:"昵称",
 							time:"10:21",
 							data:"我是信息",
 							noreadnum:0
 						},
 						{
-							userpic:"../../static/demo/userpic/12.jpg",
+							userpic:"../../static/demo/userpic/3.jpg",
 							username:"昵称",
 							time:"10:21",
 							data:"我是信息",
 							noreadnum:0
 						},
 						{
-							userpic:"../../static/demo/userpic/12.jpg",
+							userpic:"../../static/demo/userpic/4.jpg",
 							username:"昵称",
 							time:"10:21",
 							data:"我是信息",
 							noreadnum:11
 						},
 						{
-							userpic:"../../static/demo/userpic/12.jpg",
+							userpic:"../../static/demo/userpic/5.jpg",
 							username:"昵称",
 							time:"10:21",
 							data:"我是信息",
 							noreadnum:2
 						},
 						{
-							userpic:"../../static/demo/userpic/12.jpg",
+							userpic:"../../static/demo/userpic/6.jpg",
 							username:"昵称",
 							time:"10:21",
 							data:"我是信息",
 							noreadnum:0
 						},
 						{
-							userpic:"../../static/demo/userpic/12.jpg",
+							userpic:"../../static/demo/userpic/7.jpg",
 							username:"昵称",
 							time:"10:21",
 							data:"我是信息",
 							noreadnum:0
 						},
 						{
-							userpic:"../../static/demo/userpic/12.jpg",
+							userpic:"../../static/demo/userpic/8.jpg",
 							username:"昵称",
 							time:"10:21",
 							data:"我是信息",

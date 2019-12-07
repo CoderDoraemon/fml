@@ -1,0 +1,11 @@
+
+.login-out {
+	background: #E9657E!important;
+	color: #FFFFFF;
+	height: 88rpx;
+	margin: 30rpx;
+	border-radius: 88rpx;
+	font-weight: bold;
+}
+
+
