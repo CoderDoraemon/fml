@@ -37,11 +37,21 @@
 		<view class="home-ad u-f-ajc">
 			<image src="../../static/demo/banner3.jpg" mode="widthFix" lazy-load></image>
 		</view>
+		<!-- 列表 -->
+		<view class="">
+			<uni-list>
+				<uni-list-item title="浏览历史" thumb="https://img-cdn-qiniu.dcloud.net.cn/new-page/uni.png" />
+				<uni-list-item title="糗百认证" thumb="https://img-cdn-qiniu.dcloud.net.cn/new-page/uni.png" />
+			</uni-list>
+		</view>
+		
 	</view>
 </template>
 
 <script>
 	export default {
+		components: {
+		},
 		data() {
 			return {
 				
@@ -85,7 +95,6 @@
 
 .home-ad {
 	padding: 20upx;
-	
 }
 .home-ad>image {
 	width: 100%;
