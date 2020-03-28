@@ -1,6 +1,6 @@
 
 .uni-tab-bar {
-	border-bottom: 1rpx solid #EEEEEE;
+	border-bottom: 0.5px solid #FFFFFF;
 }
 .swiper-tab-list {
 	color: #969696;

@@ -30,7 +30,7 @@
 
 <style>
 	.uni-tab-bar {
-		border-bottom: 1upx solid #EEEEEE;
+		border-bottom: 0.5px solid #FFFFFF;
 	}
 
 	.swiper-tab-list {
