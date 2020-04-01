@@ -1,32 +1,26 @@
 <template>
-	<view class="uni-status-bar" :style="{ height: statusBarHeight,background:bgcolor}">
-		<slot></slot>
+	<view :style="{ height: statusBarHeight }" class="uni-status-bar">
+		<slot />
 	</view>
 </template>
 
 <script>
-	var statusBarHeight = uni.getSystemInfoSync().statusBarHeight + 'px';
+	var statusBarHeight = uni.getSystemInfoSync().statusBarHeight + 'px'
 	export default {
-		name: 'uni-status-bar',
-		props:{
-			bgcolor:{
-				type:String,
-				default:''
-			}
-		},
+		name: 'UniStatusBar',
 		data() {
 			return {
 				statusBarHeight: statusBarHeight
-			};
+			}
 		}
-	};
+	}
 </script>
 
-<style>
+<style scoped>
 	.uni-status-bar {
-		display: block;
-		width: 100%;
+		width: 750rpx;
 		height: 20px;
-		height: var(--status-bar-height);
+		/* height: var(--status-bar-height);
+ */
 	}
 </style>

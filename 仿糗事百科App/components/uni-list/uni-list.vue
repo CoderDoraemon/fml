@@ -12,6 +12,11 @@
 </template>
 
 <script>
+	/**
+	 * List 列表
+	 * @description 列表组件
+	 * @tutorial https://ext.dcloud.net.cn/plugin?id=24
+	 */
 	export default {
 		name: 'UniList',
 		'mp-weixin': {
@@ -44,25 +49,30 @@
 		}
 	}
 </script>
-<style lang="scss" scoped>
+<style scoped>
 	.uni-list {
 		/* #ifndef APP-NVUE */
 		display: flex;
 		/* #endif */
-		background-color: $uni-bg-color;
+		background-color: #ffffff;
 		position: relative;
 		flex-direction: column;
-		// border-bottom-color: $uni-border-color;
-		// border-bottom-style: solid;
-		// border-bottom-width: 1px;
+		/* border-bottom-color: $uni-border-color;
+ */
+		/* border-bottom-style: solid;
+ */
+		/* border-bottom-width: 1px;
+ */
 	}
+
 	/* #ifndef APP-NVUE */
 	.uni-list:before {
 		height: 0;
 	}
+
 	.uni-list:after {
 		height: 0;
 	}
-	/* #endif */
 
+	/* #endif */
 </style>

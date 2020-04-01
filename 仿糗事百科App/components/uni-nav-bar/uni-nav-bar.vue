@@ -1,76 +1,90 @@
 <template>
 	<view class="uni-navbar">
-		<view class="uni-navbar__content" :class="{'uni-navbar--fixed': !!fixed,'uni-navbar--shadow':!!border,'uni-navbar--border':!!border}" :style="{'background-color':backgroundColor}" style="z-index: 9999;">
-			<!-- 状态栏 -->
-			<!-- #ifdef APP-PLUS -->
-			<uni-status-bar v-if="statusBar"></uni-status-bar>
-			<!-- #endif -->
-			<!-- 导航栏 -->
-			<view class="uni-navbar__header" :style="{color:color}">
-				<!-- 左边按钮 -->
-				<view class="uni-navbar__header-btns" @tap="onClickLeft">
-					<view v-if="leftIcon.length">
-						<uni-icon :type="leftIcon" :color="color" size="24"></uni-icon>
+		<view :class="{ 'uni-navbar--fixed': fixed, 'uni-navbar--shadow': shadow, 'uni-navbar--border': border }" :style="{ 'background-color': backgroundColor }" class="uni-navbar__content">
+			<uni-status-bar v-if="statusBar" />
+			<view :style="{ color: color,backgroundColor: backgroundColor }" class="uni-navbar__header uni-navbar__content_view">
+				<view @tap="onClickLeft" class="uni-navbar__header-btns uni-navbar__header-btns-left uni-navbar__content_view">
+					<view class="uni-navbar__content_view" v-if="leftIcon.length">
+						<uni-icons :color="color" :type="leftIcon" size="24" />
 					</view>
-					<view v-if="leftText.length" class="uni-navbar-btn-text" :class="{'uni-navbar-btn-icon-left':!leftIcon.length}">{{leftText}}</view>
-					<slot name="left"></slot>
+					<view :class="{ 'uni-navbar-btn-icon-left': !leftIcon.length }" class="uni-navbar-btn-text uni-navbar__content_view" v-if="leftText.length">
+						<text :style="{ color: color, fontSize: '14px' }">{{ leftText }}</text>
+					</view>
+					<slot name="left" />
 				</view>
-				<!-- 中间部分 -->
-				<view class="uni-navbar__header-container">
-					<view v-if="title.length" class="uni-navbar__header-container-inner">{{title}}</view>
+				<view class="uni-navbar__header-container uni-navbar__content_view">
+					<view class="uni-navbar__header-container-inner uni-navbar__content_view" v-if="title.length">
+						<text class="uni-nav-bar-text" :style="{color: color }">{{ title }}</text>
+					</view>
 					<!-- 标题插槽 -->
-					<slot></slot>
+					<slot />
 				</view>
-				<!-- 右边按钮 -->
-				<view class="uni-navbar__header-btns" @tap="onClickRight">
-					<view v-if="rightIcon.length">
-						<uni-icon :type="rightIcon" :color="color" size="24"></uni-icon>
+				<view :class="title.length ? 'uni-navbar__header-btns-right' : ''" @tap="onClickRight" class="uni-navbar__header-btns uni-navbar__content_view">
+					<view class="uni-navbar__content_view" v-if="rightIcon.length">
+						<uni-icons :color="color" :type="rightIcon" size="24" />
 					</view>
 					<!-- 优先显示图标 -->
-					<view v-if="rightText.length&&!rightIcon.length" class="uni-navbar-btn-text">{{rightText}}</view>
-					<slot name="right"></slot>
+					<view class="uni-navbar-btn-text uni-navbar__content_view" v-if="rightText.length && !rightIcon.length">
+						<text class="uni-nav-bar-right-text">{{ rightText }}</text>
+					</view>
+					<slot name="right" />
 				</view>
 			</view>
 		</view>
 		<view class="uni-navbar__placeholder" v-if="fixed">
-			<!-- #ifdef APP-PLUS -->
-			<uni-status-bar v-if="statusBar"></uni-status-bar>
-			<!-- #endif -->
-			<view class="uni-navbar__placeholder-view"></view>
+			<uni-status-bar v-if="statusBar" />
+			<view class="uni-navbar__placeholder-view" />
 		</view>
 	</view>
 </template>
 
 <script>
-	import uniStatusBar from '../uni-status-bar/uni-status-bar.vue'
-	import uniIcon from '../uni-icon/uni-icon.vue'
+	import uniStatusBar from "../uni-status-bar/uni-status-bar.vue";
+	import uniIcons from "../uni-icons/uni-icons.vue";
 
+	/**
+	 * NavBar 自定义导航栏
+	 * @description 导航栏组件，主要用于头部导航
+	 * @tutorial https://ext.dcloud.net.cn/plugin?id=52
+	 * @property {String} title 标题文字
+	 * @property {String} leftText 左侧按钮文本
+	 * @property {String} rightText 右侧按钮文本
+	 * @property {String} leftIcon 左侧按钮图标（图标类型参考 [Icon 图标](http://ext.dcloud.net.cn/plugin?id=28) type 属性）
+	 * @property {String} rightIcon 右侧按钮图标（图标类型参考 [Icon 图标](http://ext.dcloud.net.cn/plugin?id=28) type 属性）
+	 * @property {String} color 图标和文字颜色
+	 * @property {String} backgroundColor 导航栏背景颜色
+	 * @property {Boolean} fixed = [true|false] 是否固定顶部
+	 * @property {Boolean} statusBar = [true|false] 是否包含状态栏
+	 * @property {Boolean} shadow = [true|false] 导航栏下是否有阴影
+	 * @event {Function} clickLeft 左侧按钮点击时触发
+	 * @event {Function} clickRight 右侧按钮点击时触发
+	 */
 	export default {
-		name: 'uni-nav-bar',
+		name: "UniNavBar",
 		components: {
 			uniStatusBar,
-			uniIcon
+			uniIcons
 		},
 		props: {
 			title: {
 				type: String,
-				default: ''
+				default: ""
 			},
 			leftText: {
 				type: String,
-				default: ''
+				default: ""
 			},
 			rightText: {
 				type: String,
-				default: ''
+				default: ""
 			},
 			leftIcon: {
 				type: String,
-				default: ''
+				default: ""
 			},
 			rightIcon: {
 				type: String,
-				default: ''
+				default: ""
 			},
 			fixed: {
 				type: [Boolean, String],
@@ -78,110 +92,144 @@
 			},
 			color: {
 				type: String,
-				default: '#000000'
+				default: "#000000"
 			},
 			backgroundColor: {
 				type: String,
-				default: '#FFFFFF'
+				default: "#FFFFFF"
 			},
 			statusBar: {
 				type: [Boolean, String],
 				default: false
 			},
 			shadow: {
-				type: [String, Boolean],
-				default: true
+				type: [Boolean, String],
+				default: false
 			},
 			border: {
-				type: [String, Boolean],
+				type: [Boolean, String],
 				default: true
+			}
+		},
+		mounted() {
+			if (uni.report && this.title !== '') {
+				uni.report('title', this.title)
 			}
 		},
 		methods: {
 			onClickLeft() {
-				this.$emit('click-left')
+				this.$emit("clickLeft");
 			},
 			onClickRight() {
-				this.$emit('click-right')
+				this.$emit("clickRight");
 			}
 		}
-	}
+	};
 </script>
 
-<style>
-	@charset "UTF-8";
-
-	.uni-navbar__content {
-		display: block;
-		position: relative;
-		width: 100%;
-		background-color: #fff;
-		overflow: hidden
+<style scoped>
+	.uni-nav-bar-text {
+		/* #ifdef APP-PLUS */
+		font-size: 34rpx;
+		/* #endif */
+		/* #ifndef APP-PLUS */
+		font-size: 32rpx;
+		/* #endif */
 	}
 
-	.uni-navbar__content view {
-		line-height: 44px
+	.uni-nav-bar-right-text {
+		font-size: 28rpx;
+	}
+
+	.uni-navbar__content {
+		position: relative;
+		background-color: #ffffff;
+		overflow: hidden;
+	}
+
+	.uni-navbar__content_view {
+		/* #ifndef APP-NVUE */
+		display: flex;
+		/* #endif */
+		align-items: center;
+		flex-direction: row;
+		/* background-color: #FFFFFF;
+ */
 	}
 
 	.uni-navbar__header {
+		/* #ifndef APP-NVUE */
 		display: flex;
+		/* #endif */
 		flex-direction: row;
-		width: 100%;
 		height: 44px;
 		line-height: 44px;
-		font-size: 16px
+		font-size: 16px;
+		/* background-color: #ffffff;
+ */
 	}
 
 	.uni-navbar__header-btns {
-		display: inline-flex;
+		/* #ifndef APP-NVUE */
+		display: flex;
+		/* #endif */
 		flex-wrap: nowrap;
-		flex-shrink: 0;
-		width: 120upx;
-		padding: 0 12upx
+		width: 120rpx;
+		padding: 0 6px;
+		justify-content: center;
+		align-items: center;
 	}
 
-	.uni-navbar__header-btns:first-child {
-		padding-left: 0
+	.uni-navbar__header-btns-left {
+		/* #ifndef APP-NVUE */
+		display: flex;
+		/* #endif */
+		width: 150rpx;
+		justify-content: flex-start;
 	}
 
-	.uni-navbar__header-btns:last-child {
-		width: 60upx
+	.uni-navbar__header-btns-right {
+		/* #ifndef APP-NVUE */
+		display: flex;
+		/* #endif */
+		width: 150rpx;
+		padding-right: 30rpx;
+		justify-content: flex-end;
 	}
 
 	.uni-navbar__header-container {
-		width: 100%;
-		margin: 0 10upx
+		flex: 1;
 	}
 
 	.uni-navbar__header-container-inner {
-		font-size: 30upx;
-		text-align: center;
-		padding-right: 60upx
+		/* #ifndef APP-NVUE */
+		display: flex;
+		/* #endif */
+		flex: 1;
+		align-items: center;
+		justify-content: center;
+		font-size: 28rpx;
 	}
 
+
 	.uni-navbar__placeholder-view {
-		height: 44px
+		height: 44px;
 	}
 
 	.uni-navbar--fixed {
 		position: fixed;
-		z-index: 998
+		z-index: 998;
 	}
 
 	.uni-navbar--shadow {
-		box-shadow: 0 1px 6px #ccc
+		/* #ifndef APP-NVUE */
+		box-shadow: 0 1px 6px #ccc;
+		/* #endif */
 	}
 
-	.uni-navbar--border:after {
-		position: absolute;
-		z-index: 3;
-		bottom: 0;
-		left: 0;
-		right: 0;
-		height: 1px;
-		content: '';
-		-webkit-transform: scaleY(.5);
-		transform: scaleY(.5);
-		background-color: #c8c7cc
+	.uni-navbar--border {
+		border-bottom-width: 1rpx;
+		border-bottom-style: solid;
+		border-bottom-color: #e5e5e5;
 	}
 </style>

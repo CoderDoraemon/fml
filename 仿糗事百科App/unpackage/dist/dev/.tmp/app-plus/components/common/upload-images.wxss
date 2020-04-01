@@ -1,0 +1,20 @@
+
+.uni-uploader__file {
+	position: relative;
+}
+.icon-shanchu {
+	position: absolute;
+	top: 0;
+	right: 0;
+	background: #EEEEEE;
+	color: #333333;
+	padding: 5rpx 10rpx;
+	border-radius: 10rpx;
+}
+.cell-pd {
+	padding: 22rpx 30rpx;
+}
+.list-pd {
+	margin-top: 50rpx;
+}
+
