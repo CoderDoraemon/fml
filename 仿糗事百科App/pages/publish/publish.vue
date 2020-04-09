@@ -2,7 +2,7 @@
 	<view>
 
 		<!-- 自定义导航栏 -->
-		<uni-nav-bar :statusBar="true" rightText="发布" left-icon="back" @click-left="back" @click-right="submit">
+		<uni-nav-bar :fixed="true" :statusBar="true" rightText="发布" left-icon="back" @click-left="back" @click-right="submit">
 			<view class="u-f-ajc titleFont" @tap="changelook">
 				{{ title }}
 				<view class="icon iconfont icon-xialazhankai"></view>
@@ -117,6 +117,7 @@
 	
 	.titleFont {
 		font-size: 36upx;
+		width: 100%;
 	}
 	
 	.uni-textarea {

@@ -41,7 +41,10 @@
 		{
 			"path": "pages/news/news",
 			"style": {
-				"navigationBarTitleText": "动态"
+				"navigationBarTitleText": "动态",
+				"app-plus": {
+					"titleNView": false
+				}
 			}
 		},
 		{
