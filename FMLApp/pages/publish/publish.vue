@@ -100,6 +100,9 @@
 					delta: 1
 				});
 			},
+			submit() {
+				
+			},
 			upload(res) {
 				console.log(res);
 			},
