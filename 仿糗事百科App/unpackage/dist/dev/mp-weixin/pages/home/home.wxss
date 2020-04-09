@@ -1,0 +1,32 @@
+
+.other-login {
+	padding: 40rpx 80rpx;
+}
+.other-login>view>view {
+	width: 100rpx;
+	height: 100rpx;
+	border-radius: 100%;
+	font-size: 55rpx;
+	color: #FFFFFF;
+}
+.other-login .icon-weixin {
+	background: #08D0AA;
+}
+.other-login .icon-xinlangweibo {
+	background: #5499FF;
+}
+.other-login .icon-QQ {
+	background: #FB9000;
+}
+.home-tabs {
+	padding: 20rpx;
+}
+.home-ad {
+	padding: 20rpx;
+}
+.home-ad>image {
+	width: 100%;
+	height: 150rpx;
+	border-radius: 20rpx;
+}
+

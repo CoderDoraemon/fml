@@ -1,4 +1,7 @@
 {
   "navigationBarTitleText": "动态",
-  "usingComponents": {}
+  "titleNView": false,
+  "usingComponents": {
+    "uni-nav-bar": "/components/uni-nav-bar/uni-nav-bar"
+  }
 }

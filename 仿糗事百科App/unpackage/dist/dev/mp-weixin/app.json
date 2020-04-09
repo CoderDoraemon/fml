@@ -6,7 +6,9 @@
     "pages/home/home",
     "pages/search/search",
     "pages/publish/publish",
-    "pages/user-chat/user-chat"
+    "pages/user-chat/user-chat",
+    "pages/setter/setter",
+    "pages/home-page/home-page"
   ],
   "subPackages": [],
   "window": {
@@ -48,5 +50,5 @@
     ]
   },
   "usingComponents": {},
-  "sitemapLocation": "sitemap81.json"
+  "sitemapLocation": "sitemap2.json"
 }

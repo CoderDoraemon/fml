@@ -7,6 +7,7 @@
 .paper-list>image.data-v-f9d46bd2 {
 	width: 100rpx;
 	height: 100rpx;
+	border-radius: 100rpx;
 	margin-right: 30rpx;
 }
 .paper-list>view.data-v-f9d46bd2 {}

@@ -1,8 +1,8 @@
 
-.uni-status-bar {
-	display: block;
-	width: 100%;
-	height: 20px;
-	height: 25px;
+.uni-status-bar.data-v-571873aa {
+		width: 750rpx;
+		height: 20px;
+		/* height: var(--status-bar-height);
+ */
 }
 

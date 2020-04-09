@@ -1,1 +1,1 @@
-<view><block wx:for="{{list}}" wx:for-item="item" wx:for-index="index" wx:key="index"><block><paper-list vue-id="{{'1-'+index}}" item="{{item}}" bind:__l="__l"></paper-list></block></block></view>
+<view><block wx:for="{{list}}" wx:for-item="item" wx:for-index="index" wx:key="index"><block><paper-list vue-id="{{'91fbcbb4-1-'+index}}" item="{{item}}" bind:__l="__l"></paper-list></block></block></view>
