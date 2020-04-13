@@ -75,8 +75,13 @@
 				]
 			}
 		},
+		onNavigationBarButtonTap() {
+			uni.navigateTo({
+				url: '../setter/setter'
+			});
+		},
 		methods: {
-
+			
 		}
 	}
 </script>

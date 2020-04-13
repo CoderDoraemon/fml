@@ -2,7 +2,7 @@
 	<view>
 		
 		<block v-for="(item,index) in list" :key="index">
-			<paper-list :item="item"></paper-list>
+			<paper-list :item="item" @itemClick="itemClick"></paper-list>
 		</block>
 		
 	</view>
@@ -78,7 +78,11 @@
 				}
 		},
 		methods: {
-			
+			itemClick(index) {
+				uni.navigateTo({
+					url: "../user-chat/user-chat"
+				});
+			}
 		}
 	}
 </script>

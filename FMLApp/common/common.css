@@ -48,4 +48,11 @@
 	overflow-x: hidden;
 }
 
+.u-p-r {
+	position: relative;
+}
+
+.u-p-a {
+	position: absolute;
+}
 

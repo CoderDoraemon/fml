@@ -1,5 +1,5 @@
 <template>
-	<view class="paper-list u-f-ac">
+	<view class="paper-list u-f-ac" @tap="itemClick(index)">
 		<image class="u-f-sh" :src="item.userpic" mode="widthFix"></image>
 		<view class="u-f-column u-f1">
 			<view class="u-f-ac u-f-jsb u-line-one">
@@ -25,7 +25,13 @@
 			uniBadge,
 		},
 		props: {
-			item: Object
+			item: Object,
+			index: Number
+		},
+		methods: {
+			itemClick(index) {
+				this.$emit("itemClick", index);
+			}
 		}
 	}
 </script>

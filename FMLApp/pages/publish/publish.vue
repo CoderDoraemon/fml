@@ -48,7 +48,7 @@
 		},
 		data() {
 			return {
-				isget: false,
+				isHoldup: true,
 				showpopup: true,
 				title: "所有人可见",
 				titles: ['所有人可见', '仅自己可见'],
@@ -56,14 +56,14 @@
 				imageList: []
 			}
 		},
-		onLoad() {
+		onShow() {
 			this.$refs.popup.open();
 		},
 		onBackPress() {
-			
+			console.log("11111");
 			if (!this.text.length && this.imageList.length<1) { return }
-			
-			if (!this.isget) {
+			console.log("2222");
+			if (this.isHoldup) {
 				this.caogao();
 				return true;
 			}
@@ -80,7 +80,7 @@
 							
 						}
 						
-						this.isget = true
+						this.isHoldup = false
 						uni.navigateBack({
 							delta: 1,
 						});
@@ -96,6 +96,7 @@
 				});
 			},
 			back() {
+				console.log("00000");
 				uni.navigateBack({
 					delta: 1
 				});
