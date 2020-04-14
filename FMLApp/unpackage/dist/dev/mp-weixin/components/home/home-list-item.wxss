@@ -1,0 +1,20 @@
+
+.home-list-item.data-v-a2cd9a56 {
+	height: 100rpx;
+	padding: 0 30rpx;
+}
+/* 箭头 */
+.home-list-item>view.data-v-a2cd9a56:last-child {
+	/* padding-right: 30upx; */
+}
+.home-list-item-hover.data-v-a2cd9a56 {
+	background: #E5E5E5;
+}
+.home-list-item-left.data-v-a2cd9a56 {
+	font-size: 30rpx;
+}
+.home-list-item-left-icon.data-v-a2cd9a56 {
+	margin-right: 16rpx;
+	font-size: 45rpx;
+}
+

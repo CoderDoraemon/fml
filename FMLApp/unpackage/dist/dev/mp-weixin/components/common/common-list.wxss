@@ -1,0 +1,74 @@
+
+.common-list.data-v-0adb9afb {
+	padding: 20rpx;
+	border-bottom: 1rpx solid #E5E5E5;
+}
+.common-list-l.data-v-0adb9afb {
+	-webkit-flex-shrink: 0;
+	        flex-shrink: 0;
+}
+.common-list-l image.data-v-0adb9afb {
+	width: 90rpx;
+	height: 90rpx;
+	border-radius: 100%;
+}
+.common-list-r.data-v-0adb9afb {
+	margin-left: 12rpx;
+}
+.common-list-r>view:nth-child(1)>view:first-child .user-sex.data-v-0adb9afb {
+	background-color: #4C99FF;
+	color: #FFFFFF;
+	font-size: 22rpx;
+	padding: 5rpx 15rpx;
+	line-height: 24rpx;
+	border-radius: 24rpx;
+	margin-left: 8rpx;
+}
+.common-list-r>view:nth-child(1)>view:last-child .user-attention.data-v-0adb9afb {
+	background-color: #F3F3F3;
+	color: #333333;
+	font-size: 22rpx;
+	padding: 5rpx 15rpx;
+	line-height: 24rpx;
+	border-radius: 5rpx;
+	margin-right: 8rpx;
+}
+.common-list-r>view.data-v-0adb9afb:nth-child(2) {
+	font-size: 32rpx;
+	padding: 12rpx 0;
+}
+.common-list-r>view:nth-child(3) image.data-v-0adb9afb {
+	width: 100%;
+	border-radius: 10rpx;
+}
+.common-list-r>view.data-v-0adb9afb:nth-child(3) {
+	margin-bottom: 15rpx;
+}
+.common-list-play.data-v-0adb9afb {
+	font-size: 120rpx;
+	color: #FFFFFF;
+	height: 120rpx;
+	width: 120rpx;
+	left: 50%;
+	top: 50%;
+	margin-left: -60rpx;
+	margin-top: -60rpx;
+}
+.common-list-playInfo.data-v-0adb9afb {
+	color: #FFFFFF;
+	right: 8rpx;
+	bottom: 0;
+	background-color: rgba(58, 55, 54, 0.6);
+	font-size: 24rpx;
+	border-radius: 24rpx;
+	padding: 0 10rpx;
+}
+.common-list-r>view.data-v-0adb9afb:nth-child(4) {
+	color: #C1C1C1;
+	font-size: 28rpx;
+}
+.common-list-r>view:nth-child(4)>view:nth-child(2)>view.data-v-0adb9afb {
+	margin-left: 15rpx;
+	padding-left: 8rpx;
+}
+

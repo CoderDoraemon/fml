@@ -1,2 +1,0 @@
-setCssToHead([".",[1],"login-out { background: #E9657E!important; color: #FFFFFF; height: ",[0,88],"; margin: ",[0,30],"; border-radius: ",[0,88],"; font-weight: bold; }\n",],undefined,{path:"./pages/setter/setter.wxss"})();
-document.dispatchEvent(new CustomEvent("generateFuncReady", { detail: { generateFunc: $gwx('./pages/setter/setter.wxml') } }));
