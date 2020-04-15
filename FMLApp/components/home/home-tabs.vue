@@ -17,10 +17,9 @@
 </script>
 
 <style scoped>
-	.home-page {
-	}
 	
 	.home-tabs {
+		background-color: #FFFFFF;
 		padding: 20upx;
 	}
 </style>

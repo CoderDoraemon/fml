@@ -16,7 +16,7 @@
 				<swiper-item v-for="(items, index) in newslist" :key="index">
 					<scroll-view scroll-y class="list" @scrolltolower="loadMore(index)">
 						<block v-for="(item, row) in items.list" :key="row">
-							<index-list :item="item"></index-list>
+							<index-list :item="item" @toUserSpace="toUserSpace(index)"></index-list>
 						</block>
 						
 						<load-more :loadtext="items.loadtext"></load-more>
@@ -261,6 +261,12 @@
 			})
 		},
 		methods: {
+			// 跳转到个人空间
+			toUserSpace(index) {
+				uni.navigateTo({
+					url: "../user-space/user-space"
+				});
+			},
 			/* tab item 点击 */
 			tabtap(index) {
 				console.log("点击" + index)

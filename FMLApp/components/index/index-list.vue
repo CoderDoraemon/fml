@@ -5,8 +5,8 @@
 			<!-- 头像 -->
 			<view class="avatar-name u-f">
 				<!-- 头像 vip -->
-				<view class="avatar-vip">
-					<image class="avatar" :src="item.userpic" mode="widthFix"></image>
+				<view class="avatar-vip" @tap="toUserSpace(index)">
+					<image class="avatar" :src="item.userpic" mode="widthFix" lazy-load></image>
 					<image class="vip" src="../../static/demo/userpic/2.jpg" mode="widthFix"></image>
 				</view>
 				<!-- 昵称 抬头 -->
@@ -64,7 +64,13 @@
 <script>
 	export default {
 		props: {
-			item: Object
+			item: Object,
+			index: Number
+		},
+		methods: {
+			toUserSpace(index) {
+				this.$emit("toUserSpace", index);
+			}
 		}
 	}
 </script>

@@ -20,6 +20,22 @@
 				账号密码登陆<view class="icon iconfont icon-jinru"></view>
 			</view>
 		</template>
+		
+		<template v-else>
+			<view class="login-user-info u-f-ac u-f-jsb">
+				
+				<view class="u-f">
+					<image src="../../static/demo/userpic/1.jpg" mode="widthFix" lazy-load></image>
+					<view class="u-f-column">
+						<text>昵称</text>
+						<text>总访客0 今日0</text>
+					</view>
+				</view>
+				
+				<view class="login-user-info-arrow icon iconfont icon-jinru"></view>
+				
+			</view>
+		</template>
 
 		<!-- 横向bar -->
 		<view class="home-tabs u-f-ajc">
@@ -55,7 +71,7 @@
 		components: {},
 		data() {
 			return {
-				loginStatus:false,
+				loginStatus:true,
 				homeinfo:{
 					userpic:"../../static/demo/userpic/11.jpg",
 					username:"昵称",
@@ -87,8 +103,8 @@
 </script>
 
 <style>
-	.other-login {
-		padding: 40upx 80upx;
+	.other-login, .login-user-info {
+		padding: 20upx;
 	}
 
 	.other-login>view>view {
@@ -109,6 +125,17 @@
 
 	.other-login .icon-QQ {
 		background: #FB9000;
+	}
+	
+	.login-user-info>view:nth-child(1)>image {
+		width: 90upx;
+		height: 90upx;
+		border-radius: 90upx;
+		margin-right: 20upx;
+	}
+	
+	.login-user-info-arrow {
+		
 	}
 
 	.home-tabs {
