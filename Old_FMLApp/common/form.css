@@ -1,0 +1,24 @@
+/* 公共按钮 */
+.user-set-btn{
+	width: 100%;
+	margin: 20upx 0;
+	background: #FD597C!important;
+	border: 0!important;
+	color: #FFFFFF!important;
+	border-radius: 50rpx;
+}
+.user-set-btn-disable{
+	background: #FFB2A3!important;
+	border-color: #FFB2A3!important;
+	border-width: 0rpx!important;
+}
+
+.body{
+	padding: 0 20upx!important;
+}
+.common-input{
+	font-size: 30upx;
+	border-bottom: 1upx solid #F4F4F4;
+	padding-top: 25rpx;
+	padding-bottom:25rpx;
+}

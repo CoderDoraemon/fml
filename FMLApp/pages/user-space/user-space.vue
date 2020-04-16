@@ -5,17 +5,17 @@
 			
 			<image src="../../static/bgimg/1.jpg" mode="aspectFill" lazy-load></image>
 			
-			<view class="user-space-info u-p-a">
-				<view class="u-f-ajc">
+			<view class="user-space-info u-p-a u-f-column u-f-ajc">
+				<view>
 					<image src="../../static/demo/userpic/1.jpg" mode="widthFix" lazy-load></image>
 				</view>
 				
-				<view class="user-space-info-name u-f-ajc">
+				<view class="user-space-info-name u-f u-f-ajc">
 					昵称
 					<tag-sex-number age="20" isman="1"></tag-sex-number>
 				</view>
 				
-				<view class="u-f-ajc">
+				<view class="user-space-info-att">
 					<uni-fav 
 					:content-text="contentText" 
 					iconText="plusempty" 
@@ -29,11 +29,15 @@
 					@click="favClick" />
 				</view>
 				
-				
-				<home-tabs class="home-tabs-info" :numbers="numbers"></home-tabs>
+				<!-- <home-tabs class="home-tabs-info" :numbers="numbers"></home-tabs> -->
 			</view>
 			
 		</view>
+		
+		<view class="home-tabs-info u-p-r">
+			<home-tabs :numbers="numbers"></home-tabs>
+		</view>
+		
 		
 		<view class="user-space-segmentation"></view>
 		
@@ -125,8 +129,8 @@
 	}
 	
 	.user-space-info {
-		bottom: 0upx;
 		width: 100%;
+		bottom: 30upx;
 	}
 	
 	.user-space-info>view:nth-child(1)>image {
@@ -150,9 +154,11 @@
 	}
 	
 	.home-tabs-info {
-		margin-top: 20upx;
-		bottom: 0;
 		border-radius: 20upx 20upx 0 0;
+		z-index: 10;
+		margin-top: -20upx;
+		/* border-top-left-radius: 20upx;
+		border-top-right-radius: 20upx; */
 	}
 	
 	.user-space-segmentation {
