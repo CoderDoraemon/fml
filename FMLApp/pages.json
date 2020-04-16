@@ -78,7 +78,7 @@
 		},
 
 		{
-			"path": "pages/my/my",
+			"path": "pages/home/home",
 			"style": {
 				"navigationBarTitleText": "我的",
 				"app-plus": {

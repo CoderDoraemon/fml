@@ -41,11 +41,16 @@
 		
 		<view class="user-space-segmentation"></view>
 		
-		<swiper-tab-head
+		<!-- <swiper-tab-head
 		:tabBars="tabBars" 
 		:tabIndex="tabIndex" 
+		scrollItemStyle="width:33.33%;" 
+		scrollStyle="border-bottom: 4px;"
 		@tabtap="tabtap">
-		</swiper-tab-head>
+		</swiper-tab-head> -->
+		
+		<swiper-tab-head :tabBars="tabBars" :layoutType="2"></swiper-tab-head>
+		
 	</view>
 </template>
 
@@ -65,6 +70,9 @@
 		data() {
 			return {
 				tabIndex: 0,
+				
+				scrollLeft: 0,
+				TabCur: 0,
 				itemWidth: 0,
 				isattention: false,
 				contentText: {
@@ -106,12 +114,15 @@
 		methods: {
 			/* tab item 点击 */
 			tabtap(index) {
-				console.log("点击" + index)
 				this.tabIndex = index;
 			},
 			favClick() {
 				this.isattention = !this.isattention
 				this.$forceUpdate()
+			},
+			tabSelect(e) {
+				this.TabCur = e.currentTarget.dataset.id;
+				this.scrollLeft = (e.currentTarget.dataset.id - 1) * 60
 			}
 		}
 	}

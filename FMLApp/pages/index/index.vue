@@ -1,12 +1,14 @@
 <template>
 	<view>
 		
-		<swiper-tab-head 
+		<!-- <swiper-tab-head 
 		:tabBars="tabBars" 
 		:tabIndex="tabIndex" 
 		@tabtap="tabtap"
 		:itemWidth="itemWidth">
-		</swiper-tab-head>
+		</swiper-tab-head> -->
+		
+		<swiper-tab-head :tabBars="tabBars" @tabSelect="tabSelect" :TabCur="tabIndex"></swiper-tab-head>
 		
 		<view class="uni-tab-bar">
 			<swiper class="swiper-box" 
@@ -268,7 +270,7 @@
 				});
 			},
 			/* tab item 点击 */
-			tabtap(index) {
+			tabSelect(index) {
 				console.log("点击" + index)
 				this.tabIndex = index;
 			},

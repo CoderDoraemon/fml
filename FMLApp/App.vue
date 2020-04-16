@@ -26,4 +26,7 @@
 	/* 公共css库 */
 	@import './common/common.css';
 	
+	@import "./colorui/main.css";
+	@import "./colorui/icon.css";
+	
 </style>
