@@ -49,7 +49,7 @@
 		@tabtap="tabtap">
 		</swiper-tab-head> -->
 		
-		<swiper-tab-head :tabBars="tabBars" :layoutType="2"></swiper-tab-head>
+		<swiper-tab-head :tabBars="tabBars" :layoutType="2" :currentIndex="tabIndex" @tabSelect="tabSelect"></swiper-tab-head>
 		
 	</view>
 </template>
@@ -113,16 +113,12 @@
 		},
 		methods: {
 			/* tab item 点击 */
-			tabtap(index) {
+			tabSelect(index) {
 				this.tabIndex = index;
 			},
 			favClick() {
 				this.isattention = !this.isattention
 				this.$forceUpdate()
-			},
-			tabSelect(e) {
-				this.TabCur = e.currentTarget.dataset.id;
-				this.scrollLeft = (e.currentTarget.dataset.id - 1) * 60
 			}
 		}
 	}

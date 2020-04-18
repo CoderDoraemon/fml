@@ -9,14 +9,15 @@
 			</block>
 
 			<view class="nav-tab-bar u-f-ajc">
-				<block v-for="(tabBar, index) in tabBars" :key="tabBar.id">
+				<!-- <block v-for="(tabBar, index) in tabBars" :key="tabBar.id">
 					<view class="u-f-ajc" :class="{'active': tabIndex == index}" @tap="tabClick(index)">
 						{{ tabBar.name }}
 						<view class="nav-tab-bar-line" v-if="tabIndex == index"></view>
 					</view>
-				</block>
+				</block> -->
+				<swiper-tab-head :tabBars="tabBars" @tabSelect="tabSelect" :currentIndex="tabIndex" :layoutType="1" :showBottomLine="true"></swiper-tab-head>
 			</view>
-
+			
 			<block slot="right">
 				<view class="nav-right">
 					<view class="icon iconfont icon-bianji1"></view>
@@ -25,22 +26,25 @@
 
 		</uni-nav-bar>
 		
+		
 		<!-- 列表 -->
 		<block v-for="(item, index) in list" :key="index">
 			<common-list :item="item" :index="index"></common-list>
 		</block>
-
+		
 	</view>
 </template>
 
 <script>
 	import uniNavBar from '../../components/uni-nav-bar/uni-nav-bar.vue';
 	import commonList from '../../components/common/common-list.vue';
+	import swiperTabHead from '../../components/index/swiper-tab-head.vue'
 	
 	export default {
 		components: {
 			uniNavBar,
 			commonList,
+			swiperTabHead
 		},
 		data() {
 			return {
@@ -69,7 +73,8 @@
 							path:"深圳 龙岗",
 							sharenum:20,
 							commentnum:30,
-							goodnum:20
+							goodnum:20,
+							showtype: 0
 						},
 						// 图文
 						{
@@ -85,7 +90,8 @@
 							path:"深圳 龙岗",
 							sharenum:20,
 							commentnum:30,
-							goodnum:20
+							goodnum:20,
+							showtype: 1
 						},
 						// 视频
 						{
@@ -104,7 +110,8 @@
 							path:"深圳 龙岗",
 							sharenum:20,
 							commentnum:30,
-							goodnum:20
+							goodnum:20,
+							showtype: 0
 						},
 						// 分享
 						{
@@ -123,7 +130,8 @@
 							path:"深圳 龙岗",
 							sharenum:20,
 							commentnum:30,
-							goodnum:20
+							goodnum:20,
+							showtype: 1
 						},
 					]
 				
@@ -133,7 +141,7 @@
 			openAdd() {
 
 			},
-			tabClick(index) {
+			tabSelect(index) {
 				this.tabIndex = index;
 			}
 		}
@@ -165,28 +173,8 @@
 
 	.nav-tab-bar {
 		width: 100%;
-		margin-left: -20upx;
-		position: relative;
-	}
-
-	.nav-tab-bar>view {
-		font-size: 32upx;
-		padding: 0 15upx;
-		font-weight: bold;
-		color: #969696;
-	}
-
-	.active {
-		color: #333333 !important;
-	}
-
-	.nav-tab-bar-line {
-		position: absolute;
-		border-bottom: 5upx solid #FEDE33;
-		border-top: 5upx solid #FEDE33;
-		width: 70upx;
-		border-radius: 20upx;
-		bottom: 8upx;
+		/* margin-left: -20upx;
+		position: relative; */
 	}
 
 	

@@ -8,7 +8,7 @@
 		:itemWidth="itemWidth">
 		</swiper-tab-head> -->
 		
-		<swiper-tab-head :tabBars="tabBars" @tabSelect="tabSelect" :TabCur="tabIndex"></swiper-tab-head>
+		<swiper-tab-head :tabBars="tabBars" @tabSelect="tabSelect" :currentIndex="tabIndex"></swiper-tab-head>
 		
 		<view class="uni-tab-bar">
 			<swiper class="swiper-box" 

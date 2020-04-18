@@ -1,6 +1,8 @@
 <template>
 	<view>
 		
+		
+		
 		<block v-for="(item,index) in list" :key="index">
 			<paper-list :item="item" @itemClick="itemClick"></paper-list>
 		</block>
@@ -10,10 +12,12 @@
 
 <script>
 	import paperList from "../../components/paper/paper-list.vue";
+	import swiperTabHead from '../../components/index/swiper-tab-head.vue'
 	
 	export default {
 		components: {
 			paperList,
+			swiperTabHead
 		},
 		data() {
 			return {
