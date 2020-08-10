@@ -24,9 +24,9 @@
 			<view class="u-f u-f-jsb">
 				<view class="">{{ item.path }}</view>
 				<view class="u-f-ajc" >
-					<view class="u-f-ajc icon iconfont icon-zhuanfa">{{ item.sharenum }}</view>
-					<view class=" icon iconfont icon-pinglun1">{{ item.commentnum }}</view>
-					<view class=" icon iconfont icon-dianzan1">{{ item.goodnum }}</view>
+					<view class="u-f-jsb icon iconfont icon-zhuanfa">{{ item.sharenum }}</view>
+					<view class="u-f-jsb icon iconfont icon-pinglun1">{{ item.commentnum }}</view>
+					<view class="u-f-jsb icon iconfont icon-dianzan1">{{ item.goodnum }}</view>
 				</view>
 			</view>
 		</view>
